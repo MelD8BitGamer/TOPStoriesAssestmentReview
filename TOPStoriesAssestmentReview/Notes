@@ -1,4 +1,12 @@
 some resources
 
 https://jsonlint.com/
-copy the valid JSON
+copy the valid JSON to that link above in order to see if the JSON data is valid
+sometimes you need to add a curly brace and a square bracket to the end of the JSON data in order to validate it
+
+when making a git ignore before doing that go to github and create a new file there and put .gitignore
+make sure you type swift language
+then it will populatre and on the bottom putthe files in this case
+Config.swift and .DS_Store
+
+you do not want to 
