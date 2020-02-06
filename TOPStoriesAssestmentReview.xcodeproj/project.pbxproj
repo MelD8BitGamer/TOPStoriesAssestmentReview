@@ -97,11 +97,10 @@
 			children = (
 				4D5AF3A723EC7ED20021E256 /* Notes */,
 				4D5AF3AB23EC86040021E256 /* Models */,
-				4D5AF3AE23EC862B0021E256 /* Network */,
+				4D5AF3AE23EC862B0021E256 /* Network Services */,
 				4D5AF3A423EC711A0021E256 /* Views */,
 				4D5AF39B23EC6E430021E256 /* Controllers */,
 				4D5AF39A23EC6E2B0021E256 /* SupportFiles */,
-				4D5AF37A23EC6B710021E256 /* ViewController.swift */,
 				4D5AF38423EC6B720021E256 /* Info.plist */,
 			);
 			path = TOPStoriesAssestmentReview;
@@ -130,6 +129,7 @@
 		4D5AF39B23EC6E430021E256 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D5AF37A23EC6B710021E256 /* ViewController.swift */,
 				4D5AF3A223EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift */,
 				4D5AF39C23EC6E630021E256 /* NewsFeedViewController.swift */,
 				4D5AF39E23EC6E710021E256 /* SavedArticleViewController.swift */,
@@ -154,12 +154,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4D5AF3AE23EC862B0021E256 /* Network */ = {
+		4D5AF3AE23EC862B0021E256 /* Network Services */ = {
 			isa = PBXGroup;
 			children = (
 				4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */,
 			);
-			path = Network;
+			path = "Network Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
