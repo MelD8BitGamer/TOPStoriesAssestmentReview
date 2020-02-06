@@ -22,6 +22,7 @@
 		4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A923EC851B0021E256 /* TopStory.swift */; };
 		4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */; };
 		4D5AF3B123EC86890021E256 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D5AF3B023EC86890021E256 /* ImageKit */; };
+		4D5AF3B323EC8BF40021E256 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B223EC8BF40021E256 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4D5AF3A723EC7ED20021E256 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4D5AF3A923EC851B0021E256 /* TopStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopStory.swift; path = TOPStoriesAssestmentReview/Models/TopStory.swift; sourceTree = SOURCE_ROOT; };
 		4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYITTopStoriesAPIClient.swift; sourceTree = "<group>"; };
+		4D5AF3B223EC8BF40021E256 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				4D5AF37823EC6B710021E256 /* SceneDelegate.swift */,
 				4D5AF37F23EC6B720021E256 /* Assets.xcassets */,
 				4D5AF37623EC6B710021E256 /* AppDelegate.swift */,
+				4D5AF3B223EC8BF40021E256 /* Config.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */,
 				4D5AF3A123EC6E890021E256 /* SettingsViewController.swift in Sources */,
 				4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */,
+				4D5AF3B323EC8BF40021E256 /* Config.swift in Sources */,
 				4D5AF37723EC6B710021E256 /* AppDelegate.swift in Sources */,
 				4D5AF3A323EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift in Sources */,
 				4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */,
