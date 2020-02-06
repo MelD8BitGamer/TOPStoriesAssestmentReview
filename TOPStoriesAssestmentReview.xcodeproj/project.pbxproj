@@ -17,6 +17,7 @@
 		4D5AF39F23EC6E710021E256 /* SavedArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF39E23EC6E710021E256 /* SavedArticleViewController.swift */; };
 		4D5AF3A123EC6E890021E256 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A023EC6E890021E256 /* SettingsViewController.swift */; };
 		4D5AF3A323EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A223EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift */; };
+		4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4D5AF39E23EC6E710021E256 /* SavedArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArticleViewController.swift; sourceTree = "<group>"; };
 		4D5AF3A023EC6E890021E256 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4D5AF3A223EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabBARControllerViewController.swift; sourceTree = "<group>"; };
+		4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		4D5AF37523EC6B710021E256 /* TOPStoriesAssestmentReview */ = {
 			isa = PBXGroup;
 			children = (
+				4D5AF3A423EC711A0021E256 /* Views */,
 				4D5AF39B23EC6E430021E256 /* Controllers */,
 				4D5AF39A23EC6E2B0021E256 /* SupportFiles */,
 				4D5AF37A23EC6B710021E256 /* ViewController.swift */,
@@ -122,6 +125,14 @@
 				4D5AF3A023EC6E890021E256 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D5AF3A423EC711A0021E256 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5AF37B23EC6B710021E256 /* ViewController.swift in Sources */,
+				4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */,
 				4D5AF3A123EC6E890021E256 /* SettingsViewController.swift in Sources */,
 				4D5AF37723EC6B710021E256 /* AppDelegate.swift in Sources */,
 				4D5AF3A323EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift in Sources */,
