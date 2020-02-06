@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */; };
 		4D5AF3A823EC7ED20021E256 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A723EC7ED20021E256 /* Notes */; };
 		4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3A923EC851B0021E256 /* TopStory.swift */; };
+		4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */; };
+		4D5AF3B123EC86890021E256 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D5AF3B023EC86890021E256 /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,8 @@
 		4D5AF3A223EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabBARControllerViewController.swift; sourceTree = "<group>"; };
 		4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
 		4D5AF3A723EC7ED20021E256 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
-		4D5AF3A923EC851B0021E256 /* TopStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStory.swift; sourceTree = SOURCE_ROOT; };
+		4D5AF3A923EC851B0021E256 /* TopStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopStory.swift; path = TOPStoriesAssestmentReview/Models/TopStory.swift; sourceTree = SOURCE_ROOT; };
+		4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYITTopStoriesAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5AF3B123EC86890021E256 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				4D5AF3A723EC7ED20021E256 /* Notes */,
+				4D5AF3AB23EC86040021E256 /* Models */,
+				4D5AF3AE23EC862B0021E256 /* Network */,
 				4D5AF3A423EC711A0021E256 /* Views */,
 				4D5AF39B23EC6E430021E256 /* Controllers */,
 				4D5AF39A23EC6E2B0021E256 /* SupportFiles */,
@@ -135,10 +141,25 @@
 		4D5AF3A423EC711A0021E256 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D5AF3A923EC851B0021E256 /* TopStory.swift */,
 				4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4D5AF3AB23EC86040021E256 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D5AF3A923EC851B0021E256 /* TopStory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D5AF3AE23EC862B0021E256 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +178,9 @@
 			dependencies = (
 			);
 			name = TOPStoriesAssestmentReview;
+			packageProductDependencies = (
+				4D5AF3B023EC86890021E256 /* ImageKit */,
+			);
 			productName = TOPStoriesAssestmentReview;
 			productReference = 4D5AF37323EC6B710021E256 /* TOPStoriesAssestmentReview.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 4D5AF36A23EC6B710021E256;
+			packageReferences = (
+				4D5AF3AF23EC86890021E256 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 4D5AF37423EC6B710021E256 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,6 +272,7 @@
 				4D5AF37B23EC6B710021E256 /* ViewController.swift in Sources */,
 				4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */,
 				4D5AF3A123EC6E890021E256 /* SettingsViewController.swift in Sources */,
+				4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */,
 				4D5AF37723EC6B710021E256 /* AppDelegate.swift in Sources */,
 				4D5AF3A323EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift in Sources */,
 				4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */,
@@ -509,6 +537,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D5AF3AF23EC86890021E256 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D5AF3B023EC86890021E256 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D5AF3AF23EC86890021E256 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D5AF36B23EC6B710021E256 /* Project object */;
 }
