@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageKit
 
 class NewsCell: UICollectionViewCell {
     //imageView of the article
@@ -89,6 +90,31 @@ class NewsCell: UICollectionViewCell {
             abstractHeadline.topAnchor.constraint(equalTo: articleTitle.bottomAnchor, constant: 8)
         ])
     }
+    //we need to import imageKit in order to use this
+    //dont forget to call this
+    public func configureCell(with article: Article) {
+        articleTitle.text = article.title
+        abstractHeadline.text = article.abstract
+        //image formats
+        /*
+         superJumbo 2048 x 1365
+         thumbLarge 150 x 150
+         //SO in your model you have this    let format: Stringin multimedium. you need to acces these values in the model so you need to create an enum called ImageFormat
+         */
+        newsImageView.getImage(with: article.getArticleIMageURL(for: .thumbLarge)) { [weak self] (result) in
+            switch result{
+            case .failure://no need for apperror
+                DispatchQueue.main.async {
+                    self?.newsImageView.image = UIImage(systemName: "exclamationmark-octagon")
+                }
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self?.newsImageView.image = image
+                }
+            }
+        }
+    }
+    
     
 }
 

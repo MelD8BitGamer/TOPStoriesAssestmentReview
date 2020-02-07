@@ -23,9 +23,14 @@ class NewsFeedView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        //this is more for the collectinview and tableview background more like a cream grey color and good for darkmode
+        //this is more for the collectionview and tableview background more like a cream grey color and good for darkmode
         cv.backgroundColor = .systemGroupedBackground
         return cv
+    }()
+    //TODO: finish the newsImageView and the other private func
+    public lazy var newsImageView: UIImageView = {
+        let image = UIImageView()
+        return image
     }()
     
     
@@ -42,6 +47,7 @@ class NewsFeedView: UIView {
     private func commonInit() {
         setUpSearchBarConstraints()
         setupCollectionViewConstraints()
+        setupNewsImageViewConstraints()
     }
     
     private func setUpSearchBarConstraints() {
@@ -68,6 +74,25 @@ class NewsFeedView: UIView {
         
         
         ])
+        
+    
     }
+    
+    private func setupNewsImageViewConstraints(){
+      addSubview(newsImageView)
+       
+      newsImageView.translatesAutoresizingMaskIntoConstraints = false
+      NSLayoutConstraint.activate([
+         
+        newsImageView.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+        newsImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+        newsImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier:0.50),
+        newsImageView.widthAnchor.constraint(equalTo: newsImageView.heightAnchor)
+         
+         
+      ])
+    }
+    
+    //need other constraints
 }
 

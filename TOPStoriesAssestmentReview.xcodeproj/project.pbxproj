@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D5AF37723EC6B710021E256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF37623EC6B710021E256 /* AppDelegate.swift */; };
 		4D5AF37923EC6B710021E256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF37823EC6B710021E256 /* SceneDelegate.swift */; };
-		4D5AF37B23EC6B710021E256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF37A23EC6B710021E256 /* ViewController.swift */; };
 		4D5AF38023EC6B720021E256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5AF37F23EC6B720021E256 /* Assets.xcassets */; };
 		4D5AF38323EC6B720021E256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5AF38123EC6B720021E256 /* LaunchScreen.storyboard */; };
 		4D5AF38E23EC6B720021E256 /* TOPStoriesAssestmentReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF38D23EC6B720021E256 /* TOPStoriesAssestmentReviewTests.swift */; };
@@ -24,6 +23,8 @@
 		4D5AF3B123EC86890021E256 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D5AF3B023EC86890021E256 /* ImageKit */; };
 		4D5AF3B323EC8BF40021E256 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B223EC8BF40021E256 /* Config.swift */; };
 		4D5AF3B723EDB7230021E256 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B623EDB7230021E256 /* NewsCell.swift */; };
+		4D5AF3B923EDCBA30021E256 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B823EDCBA30021E256 /* ArticleDetailViewController.swift */; };
+		4D5AF3BB23EDD1530021E256 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3BA23EDD1530021E256 /* ArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		4D5AF37323EC6B710021E256 /* TOPStoriesAssestmentReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOPStoriesAssestmentReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5AF37623EC6B710021E256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5AF37823EC6B710021E256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D5AF37A23EC6B710021E256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D5AF37F23EC6B720021E256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D5AF38223EC6B720021E256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5AF38423EC6B720021E256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYITTopStoriesAPIClient.swift; sourceTree = "<group>"; };
 		4D5AF3B223EC8BF40021E256 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4D5AF3B623EDB7230021E256 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = SOURCE_ROOT; };
+		4D5AF3B823EDCBA30021E256 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleDetailViewController.swift; path = TOPStoriesAssestmentReview/Views/ArticleDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		4D5AF3BA23EDD1530021E256 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleDetailView.swift; path = TOPStoriesAssestmentReview/Controllers/ArticleDetailView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +136,9 @@
 		4D5AF39B23EC6E430021E256 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4D5AF37A23EC6B710021E256 /* ViewController.swift */,
 				4D5AF3A223EC6F710021E256 /* TopStoriesTabBARControllerViewController.swift */,
 				4D5AF39C23EC6E630021E256 /* NewsFeedViewController.swift */,
+				4D5AF3B823EDCBA30021E256 /* ArticleDetailViewController.swift */,
 				4D5AF39E23EC6E710021E256 /* SavedArticleViewController.swift */,
 				4D5AF3A023EC6E890021E256 /* SettingsViewController.swift */,
 			);
@@ -146,8 +148,9 @@
 		4D5AF3A423EC711A0021E256 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D5AF3B623EDB7230021E256 /* NewsCell.swift */,
 				4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */,
+				4D5AF3B623EDB7230021E256 /* NewsCell.swift */,
+				4D5AF3BA23EDD1530021E256 /* ArticleDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,8 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5AF37B23EC6B710021E256 /* ViewController.swift in Sources */,
 				4D5AF3A623EC714F0021E256 /* NewsFeedView.swift in Sources */,
+				4D5AF3BB23EDD1530021E256 /* ArticleDetailView.swift in Sources */,
 				4D5AF3A123EC6E890021E256 /* SettingsViewController.swift in Sources */,
 				4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */,
 				4D5AF3B323EC8BF40021E256 /* Config.swift in Sources */,
@@ -285,6 +288,7 @@
 				4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */,
 				4D5AF37923EC6B710021E256 /* SceneDelegate.swift in Sources */,
 				4D5AF39F23EC6E710021E256 /* SavedArticleViewController.swift in Sources */,
+				4D5AF3B923EDCBA30021E256 /* ArticleDetailViewController.swift in Sources */,
 				4D5AF3B723EDB7230021E256 /* NewsCell.swift in Sources */,
 				4D5AF39D23EC6E630021E256 /* NewsFeedViewController.swift in Sources */,
 			);

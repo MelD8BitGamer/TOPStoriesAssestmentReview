@@ -9,7 +9,7 @@
 import UIKit
 
 class TopStoriesTabBARControllerViewController: UITabBarController {
-
+    
     
     private lazy var newsFeedVC: NewsFeedViewController = {
         let viewController = NewsFeedViewController()
@@ -31,6 +31,6 @@ class TopStoriesTabBARControllerViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-viewControllers = [newsFeedVC, savedArticleVC, settingsVC]
+        viewControllers = [UINavigationController(rootViewController: newsFeedVC), UINavigationController(rootViewController:savedArticleVC), UINavigationController(rootViewController:settingsVC)]
     }
 }
