@@ -23,6 +23,7 @@
 		4D5AF3AD23EC86210021E256 /* NYITTopStoriesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */; };
 		4D5AF3B123EC86890021E256 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D5AF3B023EC86890021E256 /* ImageKit */; };
 		4D5AF3B323EC8BF40021E256 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B223EC8BF40021E256 /* Config.swift */; };
+		4D5AF3B723EDB7230021E256 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AF3B623EDB7230021E256 /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4D5AF3A923EC851B0021E256 /* TopStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopStory.swift; path = TOPStoriesAssestmentReview/Models/TopStory.swift; sourceTree = SOURCE_ROOT; };
 		4D5AF3AC23EC86210021E256 /* NYITTopStoriesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYITTopStoriesAPIClient.swift; sourceTree = "<group>"; };
 		4D5AF3B223EC8BF40021E256 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4D5AF3B623EDB7230021E256 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		4D5AF3A423EC711A0021E256 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4D5AF3B623EDB7230021E256 /* NewsCell.swift */,
 				4D5AF3A523EC714F0021E256 /* NewsFeedView.swift */,
 			);
 			path = Views;
@@ -282,6 +285,7 @@
 				4D5AF3AA23EC851B0021E256 /* TopStory.swift in Sources */,
 				4D5AF37923EC6B710021E256 /* SceneDelegate.swift in Sources */,
 				4D5AF39F23EC6E710021E256 /* SavedArticleViewController.swift in Sources */,
+				4D5AF3B723EDB7230021E256 /* NewsCell.swift in Sources */,
 				4D5AF39D23EC6E630021E256 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

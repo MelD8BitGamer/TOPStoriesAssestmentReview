@@ -23,7 +23,8 @@ class NewsFeedView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        cv.backgroundColor = .blue
+        //this is more for the collectinview and tableview background more like a cream grey color and good for darkmode
+        cv.backgroundColor = .systemGroupedBackground
         return cv
     }()
     

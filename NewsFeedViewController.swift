@@ -26,10 +26,20 @@ class NewsFeedViewController: UIViewController {
         newsFeedView.collectionView.dataSource = self
         // COMPILER ERRORcould not dequeue a view of kind: UICollectionElementKindCell with identifier articleCell - must register a nib or a class for the identifier or connect a prototype cell in a storyboard'
 //So you need to register in order for this error to go away
-        newsFeedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "articleCell")
+        //BY putting the collectionVIEWCell you can load your CollectionView so you must say NewsCell.self
+        newsFeedView.collectionView.register(NewsCell.self, forCellWithReuseIdentifier: "articleCell")
     }
     
-
+    private func fetchStories(for section: String = "Technology") {
+        NYTTopStoriesAPIClient.fetchTopStories(for: section) { (result) in
+            switch result {
+            case .failure(let appError):
+                print("error fetching stories: \(appError)")
+            case .success(let article):
+                print("found \(article.count)")
+            }
+        }
+    }
    
 }
 extension NewsFeedViewController: UICollectionViewDataSource {
@@ -48,14 +58,14 @@ extension NewsFeedViewController: UICollectionViewDataSource {
 
 extension NewsFeedViewController: UICollectionViewDelegateFlowLayout {
     //return item size
-    //item size = 30% of the height of the debvice
+    //item size = 30% of the height of the device
     //item width = 100% of the device
     //this is where you make the size for the cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //we capture this in a constant
         let maxSize: CGSize = UIScreen.main.bounds.size
         let itemWidth: CGFloat = maxSize.width
-        let itemHeight: CGFloat = maxSize.height * 0.3
+        let itemHeight: CGFloat = maxSize.height * 0.2
         return CGSize(width: itemWidth, height: itemHeight)
     }
 }

@@ -6,7 +6,7 @@ sometimes you need to add a curly brace and a square bracket to the end of the J
 
 when making a git ignore before doing that go to github and create a new file there and put .gitignore
 make sure you type swift language
-then it will populatre and on the bottom putthe files in this case
+then it will populatre and on the bottom put the files in this case
 Config.swift and .DS_Store
 
-you do not want to 
+you do not want to because if you create the config first befor epushing it will be expose //finish at last video
